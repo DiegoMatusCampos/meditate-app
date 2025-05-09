@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -18,9 +19,9 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+rootProject.name = "MeditateApp"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-rootProject.name = "MeditateApp"
 include(":app")
 include(":core:presentation:designsystem")
 include(":core:presentation:ui")
@@ -33,3 +34,4 @@ include(":feature:auth:presentation")
 include(":feature:meditation:presentation")
 include(":feature:meditation:domain")
 include(":feature:meditation:data")
+
