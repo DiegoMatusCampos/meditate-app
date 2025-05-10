@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.meditationapp.android.library)
+    alias(libs.plugins.meditationapp.jvm.firebase)
 }
 
 android {

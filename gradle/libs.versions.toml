@@ -35,6 +35,7 @@ coroutines = "1.10.2"
 desugar_jdk_libs = "2.1.5"
 firebaseBOM = "33.13.0"
 media3 = "1.6.1"
+firebase-bom = "33.13.0"
 
 
 projectApplicationId = "com.dm.meditateapp"
@@ -47,7 +48,6 @@ projectVersionCode = "1"
 [libraries]
 androidx-media3-exoplayer = { group = "androidx.media3", name = "media3-exoplayer", version.ref = "media3" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-firebaseAuth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseBOM" }
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
 androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
@@ -89,6 +89,9 @@ room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "
 annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
 androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore" }
 
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
@@ -111,4 +114,33 @@ androidDynamicFeature = { id = "com.android.dynamic-feature", version.ref = "agp
 meditationapp-android-application = { id = "meditationapp.android.application", version = "unspecified"}
 meditationapp-android-application-compose = { id = "meditationapp.android.application.compose", version = "unspecified"}
 meditationapp-android-library = { id = "meditationapp.android.library", version = "unspecified"}
+meditationapp-android-library-compose = { id = "meditationapp.android.library.compose", version = "unspecified"}
+meditationapp-android-feature-ui = { id = "meditationapp.android.feature.ui", version = "unspecified"}
+meditationapp-android-room = { id = "meditationapp.android.room", version = "unspecified"}
+meditationapp-jvm-library = { id = "meditationapp.jvm.library", version = "unspecified"}
+meditationapp-jvm-firebase = { id = "meditationapp.jvm.firebase", version = "unspecified"}
+
+[bundles]
+compose = [
+    "androidx-activity-compose",
+    "androidx-lifecycle-runtime-compose",
+    "androidx-lifecycle-viewmodel-compose",
+    "androidx-material3",
+    "androidx-ui",
+    "androidx-ui-graphics",
+    "androidx-ui-tooling-preview"
+
+]
+compose-debug = [
+    "androidx-ui-tooling",
+    "androidx-ui-test-manifest"
+]
+koin = ["koin-core", "koin-android", "koin-android-workmanager"]
+koin-compose = ["koin-core", "koin-android", "koin-android-workmanager", "koin-androidx-compose"]
+
+firebase = [
+    "firebase-bom",
+    "firebase-auth",
+    "firebase-firestore"
+]
 
