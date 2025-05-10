@@ -1,4 +1,3 @@
-
 import com.android.build.api.dsl.ApplicationExtension
 import com.example.convention.ExtensionType
 import com.example.convention.configureBuildTypes
@@ -9,10 +8,10 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
 
-class AndroidApplicationConventionPlugin: Plugin<Project> {
+class AndroidApplicationConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
-        target.run{
-            pluginManager.run{
+        target.run {
+            pluginManager.run {
                 apply("com.android.application")
                 apply("org.jetbrains.kotlin.android")
             }
@@ -32,10 +31,6 @@ class AndroidApplicationConventionPlugin: Plugin<Project> {
                 configureBuildTypes(this, ExtensionType.APPLICATION)
 
             }
-
-
-
-
 
 
         }

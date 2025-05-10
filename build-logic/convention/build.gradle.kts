@@ -18,6 +18,14 @@ gradlePlugin {
             id = "meditationapp.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
+        register("androidApplicationCompose"){
+            id = "meditationapp.android.application.compose"
+            implementationClass ="AndroidApplicationComposeConventionPlugin"
+        }
+        register("androidLibrary"){
+            id = "meditationapp.android.library"
+            implementationClass ="AndroidLibraryConventionPlugin"
+        }
     }
 }
 
