@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "202204531804",
+    "project_id": "despertarnuestropotencial",
+    "storage_bucket": "despertarnuestropotencial.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202204531804:android:99455b234e0d7e23676a99",
+        "android_client_info": {
+          "package_name": "com.dm.meditateapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA94xbyzrubw3zFWioR-8Gc4m2K0Ppshh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

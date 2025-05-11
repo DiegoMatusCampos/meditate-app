@@ -33,9 +33,9 @@ coreSplashscreen = "1.0.1"
 coilCompose = "2.7.0"
 coroutines = "1.10.2"
 desugar_jdk_libs = "2.1.5"
-firebaseBOM = "33.13.0"
 media3 = "1.6.1"
 firebase-bom = "33.13.0"
+coroutines-play-services = "1.10.1"
 
 
 projectApplicationId = "com.dm.meditateapp"
@@ -89,9 +89,9 @@ room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "
 annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
 androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
-firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
-firebase-auth = { module = "com.google.firebase:firebase-auth" }
-firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore" }
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase-bom" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth-ktx" }
+coroutines-play-services = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-play-services", version.ref = "coroutines-play-services" }
 
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
@@ -138,9 +138,4 @@ compose-debug = [
 koin = ["koin-core", "koin-android", "koin-android-workmanager"]
 koin-compose = ["koin-core", "koin-android", "koin-android-workmanager", "koin-androidx-compose"]
 
-firebase = [
-    "firebase-bom",
-    "firebase-auth",
-    "firebase-firestore"
-]
 

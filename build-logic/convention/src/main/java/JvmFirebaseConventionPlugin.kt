@@ -7,8 +7,11 @@ class JvmFirebaseConventionPlugin: Plugin<Project> {
     override fun apply(target: Project) {
         target.run {
 
+
             dependencies {
-                "implementation"(libs.findBundle("firebase").get())
+                "implementation"(platform(libs.findLibrary("firebase.bom").get()))
+                "implementation"(libs.findLibrary("firebase.auth").get())
+                "implementation"(libs.findLibrary("coroutines.play.services").get())
             }
         }
     }
